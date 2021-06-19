@@ -1,0 +1,17 @@
+{
+  "name": "modern_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Juliana Ifionu",
+  "license": "MIT",
+  "homepage": "https://julie-ify.github.io/myproject",
+  "dependencies": {
+    "gh-pages": "^3.2.2",
+    "node-sass": "^6.0.0"
+  }
+}
