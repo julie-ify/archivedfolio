@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin-bottom: 5px;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #f2f2f2;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -49,7 +49,7 @@
   .menu-branding {
     margin: 0;
     padding: 0;
-    background: #3f3f3f;
+    background: #fafafa;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -76,7 +76,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: set-text-color #444;
+    color: set-text-color #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -101,8 +101,8 @@ img {
   width: 100%; }
 
 body {
-  background-color: #444;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -119,7 +119,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.95); }
+      background: rgba(255, 255, 255, 0.95); }
 
 h1,
 h2,
@@ -135,10 +135,10 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(255, 255, 255, 0.5); }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none; }
 
 header {
@@ -196,7 +196,7 @@ main {
   grid-area: job3; }
 
 #about .jobs {
-  background-color: #373737;
+  background-color: #f2f2f2;
   padding: 0.7rem;
   border-bottom: 3px solid lime;
   margin-top: 2rem; }
@@ -245,7 +245,7 @@ main {
   gap: 3rem;
   margin-top: 2rem; }
   #contact .contacts .phone {
-    border: 2px solid #515151;
+    border: 2px solid white;
     padding: 1rem 1.5rem;
     font-size: 1.5rem; }
   #contact .contacts .phone:hover {
@@ -259,7 +259,7 @@ main {
   text-align: center;
   padding: 1rem 0 1rem 0;
   height: 50px;
-  background-color: #373737; }
+  background-color: #f2f2f2; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   #work .cards {
