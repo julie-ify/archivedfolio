@@ -11,6 +11,7 @@ img {
 
 body {
   @include background;
+
   background-color: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
@@ -65,6 +66,7 @@ main {
 
       &:hover {
         color: $secondary-color;
+
         @include easeOut();
       }
     }
@@ -72,6 +74,7 @@ main {
 
   &#home {
     overflow: hidden;
+
     h1 {
       margin-top: 20vh;
     }
@@ -130,24 +133,30 @@ main {
 
 //Work
 
-#work {
-  img {
-    width: 100%;
-  }
+.contact-heading img {
+  width: 300px;
+  align-self: flex-start;
+}
 
+#work img {
+  width: 100%;
+}
+
+#work {
   .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem 1rem;
     padding: 0.5rem;
   }
+
   .card {
     .social {
       text-decoration: none;
       padding: 0.3rem 0.2rem;
       margin-bottom: 0.5rem;
-
       display: block;
+
       @include easeOut;
 
       &:hover {
@@ -158,6 +167,7 @@ main {
 
     img {
       margin-top: 2rem;
+
       &:hover {
         opacity: 0.5;
         border: 2px solid $secondary-color;
@@ -169,7 +179,6 @@ main {
 // Contact me page
 
 #contact {
-
   .contact-heading {
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -178,12 +187,8 @@ main {
     gap: 3rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-
-    & img {
-      width: 300px;
-      align-self: flex-start;
-    }
   }
+
   .contacts {
     display: flex;
     flex-wrap: wrap;
@@ -191,21 +196,21 @@ main {
     align-items: center;
     gap: 3rem;
     margin-top: 2rem;
-    
 
-    & .phone{
+    & .phone {
       border: 2px solid lighten($primary-color, 5);
       padding: 1rem 1.5rem;
       font-size: 1.5rem;
     }
 
-    & .phone:hover{
+    & .phone:hover {
       border: 2px solid $secondary-color;
     }
   }
 
   hr {
-    border: 1px solid $secondary-color;margin: 3rem 0;
+    border: 1px solid $secondary-color;
+    margin: 3rem 0;
   }
 }
 
