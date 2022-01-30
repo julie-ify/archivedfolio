@@ -180,10 +180,11 @@ main {
 
     img {
       margin-top: 2rem;
+      height: 250px;
+      border: 3px solid $secondary-color;
 
       &:hover {
         opacity: 0.5;
-        border: 2px solid $secondary-color;
       }
     }
   }
