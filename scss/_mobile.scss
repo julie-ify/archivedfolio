@@ -1,5 +1,17 @@
 //Desktop & laptops
 @include mediaLg {
+  #about {
+    .about-info {
+      grid-template-areas:
+        "about-img bio"
+        "job2 job3"
+        "job1 job1"
+        "skillset skillset";
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+  }
+
   #work {
     .cards {
       grid-template-columns: repeat(3, 1fr);
@@ -65,7 +77,8 @@
         "bio"
         "job2"
         "job3"
-        "job1";
+        "job1"
+        "skillset";
       grid-template-columns: 1fr;
       text-align: center;
     }
@@ -115,7 +128,6 @@
   #work {
     .lg-heading {
       text-align: center;
-      // font-size: 3rem;
     }
 
     .cards {

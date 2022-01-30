@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -89,10 +89,11 @@ main {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
+    margin: 5rem 0 0;
     grid-template-areas:
-      "about-img bio bio"
-      "job2 job3 job1";
+      'about-img bio bio'
+      'job2 job3 job1'
+      'skillset skillset skillset';
     grid-template-columns: repeat(3, 1fr);
     text-align: left;
   }
@@ -121,6 +122,19 @@ main {
 
   .job3 {
     grid-area: job3;
+  }
+
+  .skillset {
+    grid-area: skillset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 20px;
+    }
   }
 
   .jobs {
@@ -161,7 +175,6 @@ main {
 
       &:hover {
         color: $secondary-color;
-        // border: 1px solid $secondary-color;
       }
     }
 
@@ -196,21 +209,114 @@ main {
     align-items: center;
     gap: 3rem;
     margin-top: 2rem;
-
-    & .phone {
-      border: 2px solid lighten($primary-color, 5);
-      padding: 1rem 1.5rem;
-      font-size: 1.5rem;
-    }
-
-    & .phone:hover {
-      border: 2px solid $secondary-color;
-    }
   }
 
   hr {
     border: 1px solid $secondary-color;
     margin: 3rem 0;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 60px auto 50px;
+  }
+
+  .form-header {
+    text-align: center;
+    width: 90%;
+    margin: 24px auto;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 52px;
+    font-style: normal;
+  }
+
+  .form {
+    width: 85%;
+    margin: 58px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    background-color: lighten($primary-color, 65);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: normal;
+    border: 1px solid $secondary-color;
+    color: $primary-color;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    height: 48px;
+    padding: 12px 15px;
+  }
+
+  textarea {
+    height: 114px;
+    padding: 12px;
+  }
+
+  input[type='text']:focus,
+  input[type='email']:focus,
+  textarea:focus {
+    outline: 2px solid $secondary-color;
+  }
+
+  button[type='submit'] {
+    margin: 0 10px;
+    background-color: $secondary-color;
+    border-radius: 4px;
+    height: 48px;
+    position: static;
+    width: 129px;
+    left: 99px;
+    top: calc(50% - 48px / 2 + 141px);
+    padding: 12px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: background-color 0.7s;
+  }
+
+  button[type='submit']:hover {
+    background-color: lighten($primary-color, 65);
+    color: $secondary-color;
+    cursor: pointer;
+  }
+
+  button[type='submit']:focus {
+    background-color: $secondary-color;
+  }
+
+  .error-paragraph {
+    width: 99%;
+    display: none;
+    margin-bottom: 1rem;
+    color: red;
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+
+  .alert-errorMsg {
+    padding-left: 3%;
   }
 }
 
@@ -221,4 +327,10 @@ main {
   background-color: darken($primary-color, 5);
 }
 
-@import "mobile";
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@import 'mobile';
