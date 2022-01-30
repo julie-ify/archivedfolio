@@ -30,10 +30,11 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    margin-bottom: 3rem;
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
