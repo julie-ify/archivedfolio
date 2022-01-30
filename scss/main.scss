@@ -17,7 +17,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 //Headings
@@ -126,14 +126,14 @@ main {
 
   .skillset {
     grid-area: skillset;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start;
-    justify-content: flex-start;
     text-align: center;
 
     h3 {
       margin-bottom: 20px;
+    }
+
+    .skill-flex {
+      margin-bottom: 40px;
     }
   }
 
@@ -142,6 +142,7 @@ main {
     padding: 0.7rem;
     border-bottom: 3px solid $secondary-color;
     margin-top: 2rem;
+    height: 100%;
   }
 }
 

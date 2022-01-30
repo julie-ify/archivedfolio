@@ -1,4 +1,15 @@
 //Desktop & laptops
+@include mediaXLg {
+  .skillset {
+    grid-area: skillset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+  }
+}
+
 @include mediaLg {
   #about {
     .about-info {
@@ -8,6 +19,15 @@
         "job1 job1"
         "skillset skillset";
       grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+
+    .skillset {
+      grid-area: skillset;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: flex-start;
+      justify-content: flex-start;
       text-align: center;
     }
   }
@@ -128,10 +148,45 @@
   #work {
     .lg-heading {
       text-align: center;
+      font-size: 3rem;
+      line-height: 1.5;
     }
 
     .cards {
       grid-template-columns: 1fr;
+    }
+  }
+
+  #about {
+    .lg-heading {
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+  }
+
+  #home {
+    .lg-heading {
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+  }
+
+  #contact {
+    .lg-heading {
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+
+    .contact-form {
+      width: 100%;
+    }
+
+    .form-header {
+      width: 100%;
+    }
+
+    .form {
+      width: 100%;
     }
   }
 }
