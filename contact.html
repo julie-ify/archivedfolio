@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome To My About Page</title>
+    <title>My Contact Page</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -51,27 +51,54 @@
           </h1>
           <h2 class="sm-heading">Reach out let's get your work done...</h2>
         </div>
-        <img src="./images/contact img.svg" alt="" />
+        <img src="./images/contact.svg" alt="" />
       </div>
-      <hr>
-      <div class="contacts">
-        <div class="phone">
-          <i class="fas fa-phone text-secondary"></i> +234 9087 6758 993
+      <hr />
+      <section class="contact-form">
+        <div class="form-header-wrapper">
+          <h2 class="form-header text-secondary">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
         </div>
-        <div class="phone">
-          <a href="#"
-            ><i class="fas fa-envelope text-secondary"></i>
-            julieifionu@gmail.com</a
-          >
-        </div>
-        <div class="phone">
-          <i class="fas fa-road text-secondary"></i> 104 Arthur Avenue
-        </div>
-      </div>
+        <form
+          action="https://formspree.io/f/mrgraejl"
+          method="POST"
+          class="form"
+        >
+          <input
+            type="text"
+            name="user_name"
+            id="name"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <textarea
+            name="message"
+            id="msg"
+            maxlength="500"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+          <div class="error-paragraph"></div>
+          <button type="submit" class="submit-form">Get in touch</button>
+        </form>
+      </section>
     </main>
 
-    <footer class="main-footer">copyright &copy; 2021</footer>
+    <footer class="main-footer">
+      Made with 💙 by Juliana, copyright &copy; 2021
+    </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/validation.js"></script>
   </body>
 </html>
