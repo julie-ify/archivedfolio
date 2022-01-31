@@ -11,6 +11,13 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -44,8 +51,12 @@
     </header>
 
     <main id="about">
-      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">Let me tell you few things about me...</h2>
+      <h1 class="lg-heading" data-aos="fade-down">
+        About <span class="text-secondary">Me</span>
+      </h1>
+      <h2 class="sm-heading" data-aos="fade-right">
+        Let me tell you few things about me...
+      </h2>
       <div class="about-info">
         <img src="./images/img1.jpg" alt="" class="about-img" />
         <div class="bio">
@@ -67,7 +78,8 @@
           <h2 class="text-secondary">Frontend Developer</h2>
           <p>
             I can help you build the front-end of your website using HTML, CSS,
-            SCSS, JavaScript, React, and Redux.
+            SCSS, JavaScript, React, and
+            Redux.
           </p>
         </div>
         <div class="jobs job3">
@@ -119,5 +131,18 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init({
+        delay: 200,
+        duration: 1200,
+        once: false,
+      });
+    </script>
   </body>
 </html>

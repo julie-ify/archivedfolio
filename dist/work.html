@@ -11,6 +11,13 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -44,18 +51,15 @@
     </header>
 
     <main id="work">
-      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
-      <h2 class="sm-heading">Have a look at some of my projects...</h2>
+      <h1 class="lg-heading" data-aos="fade-down">My <span class="text-secondary">Work</span></h1>
+      <h2 class="sm-heading" data-aos="fade-right">Have a look at some of my projects...</h2>
       <div class="cards">
         <div class="card card1">
           <a
             href="https://lunar-hotel.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img
-              src="./images/card1.png"
-              class="img-height"
-              alt="Lunar Hotel"
+            ><img src="./images/card1.png" class="img-height" alt="Lunar Hotel"
           /></a>
           <a
             href="https://lunar-hotel.netlify.app/"
@@ -77,10 +81,7 @@
             href="https://julie-recipe-app.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img
-              src="./images/card3.png"
-              class="img-height"
-              alt="Recipe app"
+            ><img src="./images/card3.png" class="img-height" alt="Recipe app"
           /></a>
           <a
             href="https://julie-recipe-app.herokuapp.com/"
@@ -193,5 +194,18 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init({
+        delay: 200,
+        duration: 1200,
+        once: false,
+      });
+    </script>
   </body>
 </html>
