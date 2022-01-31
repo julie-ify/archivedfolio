@@ -6,6 +6,7 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
+
   @include easeOut;
 
   .btn-line {
@@ -13,6 +14,7 @@
     height: 3px;
     margin-bottom: 5px;
     background: set-text-color($primary-color);
+
     @include easeOut;
   }
 
@@ -70,6 +72,7 @@
     background: darken($primary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
+
     @include easeOut;
 
     &.show {
@@ -85,6 +88,7 @@
     padding: 0;
     background: darken($primary-color, 2);
     transform: translate3d(0, 100%, 0);
+
     @include easeOut;
 
     &.show {
@@ -95,7 +99,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../images/img1.jpg");
+      background: url('../images/img1.jpg');
       border-radius: 50%;
       border: 3px solid $secondary-color;
       background-size: cover;
@@ -105,6 +109,7 @@
 
   .nav-item {
     transform: translate3d(600px, 0, 0);
+
     @include easeOut;
 
     &.show {
@@ -126,6 +131,7 @@
     font-weight: 300;
     color: set-text-color ($primary-color);
     text-decoration: none;
+
     @include easeOut;
 
     &:hover {

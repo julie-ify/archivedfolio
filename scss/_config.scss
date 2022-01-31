@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: yellow;
+$secondary-color: #c6538c;
 $show-home-image: true;
 $home-image: url(../images/img-bg.jpg);
 $background-opacity: 0.95;
@@ -7,6 +7,7 @@ $background-opacity: 0.95;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
 @mixin background {
   @if $show-home-image {
     &#bg-img {
@@ -16,11 +17,13 @@ $background-opacity: 0.95;
 
       &::after {
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
+        bottom: 0;
         width: 100%;
         height: 100%;
+        box-sizing: border-box;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
@@ -31,7 +34,9 @@ $background-opacity: 0.95;
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
     @return #000;
-  } @else {
+  }
+
+  @else {
     @return #fff;
   }
 }
@@ -51,7 +56,13 @@ $background-opacity: 0.95;
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mediaXLg {
+  @media screen and (min-width: 993px) {
     @content;
   }
 }
