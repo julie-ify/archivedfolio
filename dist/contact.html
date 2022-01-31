@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Contact Page</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-60B04MBE7J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-60B04MBE7J');
+    </script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -52,17 +66,17 @@
 
     <main id="contact">
       <div class="contact-heading">
-        <div>
+        <div data-aos="fade-right">
           <h1 class="lg-heading">
             Contact <span class="text-secondary">Me</span>
           </h1>
           <h2 class="sm-heading">Reach out let's get your work done...</h2>
         </div>
-        <img src="./images/contact.svg" alt="" />
+        <img src="./images/contact.svg" alt="Contact" data-aos="fade-left"/>
       </div>
       <hr />
       <section class="contact-form">
-        <div class="form-header-wrapper">
+        <div class="form-header-wrapper" data-aos="fade-right">
           <h2 class="form-header text-secondary">
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
@@ -72,6 +86,7 @@
           action="https://formspree.io/f/mrgraejl"
           method="POST"
           class="form"
+          data-aos="fade-up"
         >
           <input
             type="text"

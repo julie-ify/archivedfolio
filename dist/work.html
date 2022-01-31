@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Works Page</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-60B04MBE7J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-60B04MBE7J');
+    </script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -51,9 +65,13 @@
     </header>
 
     <main id="work">
-      <h1 class="lg-heading" data-aos="fade-down">My <span class="text-secondary">Work</span></h1>
-      <h2 class="sm-heading" data-aos="fade-right">Have a look at some of my projects...</h2>
-      <div class="cards">
+      <h1 class="lg-heading" data-aos="fade-down">
+        My <span class="text-secondary">Work</span>
+      </h1>
+      <h2 class="sm-heading" data-aos="fade-right">
+        Have a look at some of my projects...
+      </h2>
+      <div class="cards" data-aos="fade-up">
         <div class="card card1">
           <a
             href="https://lunar-hotel.netlify.app/"
