@@ -18,7 +18,7 @@ This project entails Building a responsive portfolio website which showcase my b
 
 ## Live Demo
 
-[Live Demo Link](https://julie-ify.github.io/myportfolio/dist)
+[Live Demo Link](https://julie-ify.github.io/myportfolio/)
 
 ## Getting Started
 
