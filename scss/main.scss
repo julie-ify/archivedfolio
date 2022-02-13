@@ -161,8 +161,8 @@ main {
 #work {
   .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 3rem;
     padding: 0.5rem;
   }
 
@@ -182,8 +182,7 @@ main {
 
     img {
       margin-top: 2rem;
-      height: 250px;
-      border: 3px solid $secondary-color;
+      transition: all 0.8s;
 
       &:hover {
         opacity: 0.5;
