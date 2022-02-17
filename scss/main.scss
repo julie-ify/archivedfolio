@@ -1,5 +1,5 @@
-@import 'config';
-@import 'menu';
+@import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.3;
 }
 
@@ -29,7 +29,7 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    // font-size: 6rem;
     margin-bottom: 3rem;
   }
 
@@ -92,9 +92,9 @@ main {
     align-items: center;
     margin: 5rem 0 0;
     grid-template-areas:
-      'about-img bio bio'
-      'job2 job3 job1'
-      'skillset skillset skillset';
+      "about-img bio bio"
+      "job2 job3 job1"
+      "skillset skillset skillset";
     grid-template-columns: repeat(3, 1fr);
     text-align: left;
   }
@@ -246,8 +246,8 @@ main {
     justify-content: center;
   }
 
-  input[type='text'],
-  input[type='email'],
+  input[type="text"],
+  input[type="email"],
   textarea {
     background-color: lighten($primary-color, 65);
     box-sizing: border-box;
@@ -261,8 +261,8 @@ main {
     color: $primary-color;
   }
 
-  input[type='text'],
-  input[type='email'] {
+  input[type="text"],
+  input[type="email"] {
     height: 48px;
     padding: 12px 15px;
   }
@@ -272,13 +272,13 @@ main {
     padding: 12px;
   }
 
-  input[type='text']:focus,
-  input[type='email']:focus,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
   textarea:focus {
     outline: 2px solid $secondary-color;
   }
 
-  button[type='submit'] {
+  button[type="submit"] {
     margin: 0 10px;
     background-color: $secondary-color;
     border-radius: 4px;
@@ -298,13 +298,13 @@ main {
     transition: background-color 0.7s;
   }
 
-  button[type='submit']:hover {
+  button[type="submit"]:hover {
     background-color: lighten($primary-color, 65);
     color: $secondary-color;
     cursor: pointer;
   }
 
-  button[type='submit']:focus {
+  button[type="submit"]:focus {
     background-color: $secondary-color;
   }
 
@@ -335,4 +335,4 @@ ul {
   margin: 0;
 }
 
-@import 'mobile';
+@import "mobile";

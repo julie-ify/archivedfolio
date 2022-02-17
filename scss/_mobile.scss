@@ -8,9 +8,17 @@
     justify-content: flex-start;
     text-align: center;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 @include mediaLg {
+  h1 {
+    font-size: 3rem;
+  }
+
   #about {
     .about-info {
       grid-template-areas:
@@ -47,6 +55,15 @@
 
 // Tablets & small laptops
 @include mediaMd {
+  h2 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  // .icons {
+  //   font-size: 1rem;
+  // }
+
   main {
     align-items: center;
     text-align: center;
@@ -54,7 +71,7 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1.5rem;
-      font-size: 4.5rem;
+      font-size: 2.5rem;
     }
   }
 
