@@ -105,7 +105,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.3; }
   body#bg-img {
     background: url(../images/img-bg.jpg);
@@ -131,7 +131,6 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem;
     margin-bottom: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
@@ -173,7 +172,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 5rem 0 0;
-  grid-template-areas: 'about-img bio bio' 'job2 job3 job1' 'skillset skillset skillset';
+  grid-template-areas: "about-img bio bio" "job2 job3 job1" "skillset skillset skillset";
   grid-template-columns: repeat(3, 1fr);
   text-align: left; }
 
@@ -287,8 +286,8 @@ main {
   align-items: center;
   justify-content: center; }
 
-#contact input[type='text'],
-#contact input[type='email'],
+#contact input[type="text"],
+#contact input[type="email"],
 #contact textarea {
   background-color: #eaeaea;
   box-sizing: border-box;
@@ -301,8 +300,8 @@ main {
   border: 1px solid #ffd43b;
   color: #444; }
 
-#contact input[type='text'],
-#contact input[type='email'] {
+#contact input[type="text"],
+#contact input[type="email"] {
   height: 48px;
   padding: 12px 15px; }
 
@@ -310,12 +309,12 @@ main {
   height: 114px;
   padding: 12px; }
 
-#contact input[type='text']:focus,
-#contact input[type='email']:focus,
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
 #contact textarea:focus {
   outline: 2px solid #ffd43b; }
 
-#contact button[type='submit'] {
+#contact button[type="submit"] {
   margin: 0 10px;
   background-color: #ffd43b;
   border-radius: 4px;
@@ -334,12 +333,12 @@ main {
   letter-spacing: 0.03em;
   transition: background-color 0.7s; }
 
-#contact button[type='submit']:hover {
+#contact button[type="submit"]:hover {
   background-color: #eaeaea;
   color: #ffd43b;
   cursor: pointer; }
 
-#contact button[type='submit']:focus {
+#contact button[type="submit"]:focus {
   background-color: #ffd43b; }
 
 #contact .error-paragraph {
@@ -371,9 +370,13 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
     justify-content: flex-start;
-    text-align: center; } }
+    text-align: center; }
+  h1 {
+    font-size: 4rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  h1 {
+    font-size: 3rem; }
   #about .about-info {
     grid-template-areas: "about-img bio" "job2 job3" "job1 job1" "skillset skillset";
     grid-template-columns: 1fr 1fr;
@@ -391,13 +394,16 @@ ul {
     display: none; } }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1rem;
+    line-height: 1.5; }
   main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1.5rem;
-      font-size: 4.5rem; }
+      font-size: 2.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
