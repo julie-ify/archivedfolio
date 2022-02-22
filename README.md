@@ -4,7 +4,7 @@
 
 >
 
-![screenshot](./images/portfolio-mock.png)
+![screenshot](./images/portfolio-dark.png)
 
 This project entails Building a responsive portfolio website which showcase my bio, projects I have worked on and how to contact me.
 
