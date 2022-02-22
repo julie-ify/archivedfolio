@@ -40,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #002627;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -49,7 +49,7 @@
   .menu-branding {
     margin: 0;
     padding: 0;
-    background: #3f3f3f;
+    background: #003536;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -76,7 +76,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: set-text-color #444;
+    color: set-text-color #003f40;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -101,7 +101,7 @@ img {
   width: 100%; }
 
 body {
-  background-color: #444;
+  background-color: #003f40;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -121,7 +121,7 @@ body {
       height: 100%;
       box-sizing: border-box;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.95); }
+      background: rgba(0, 63, 64, 0.95); }
 
 h1,
 h2,
@@ -137,7 +137,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 3rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(0, 73, 74, 0.5); }
 
 a {
   color: #fff;
@@ -206,11 +206,14 @@ main {
     margin-bottom: 40px; }
 
 #about .jobs {
-  background-color: #373737;
+  background-color: #002627;
   padding: 0.7rem;
   border-bottom: 3px solid #ffd43b;
   margin-top: 2rem;
   height: 100%; }
+
+#about .skill-tools a img {
+  width: 30%; }
 
 .contact-heading img {
   width: 300px;
@@ -289,7 +292,7 @@ main {
 #contact input[type="text"],
 #contact input[type="email"],
 #contact textarea {
-  background-color: #eaeaea;
+  background-color: #8dfdff;
   box-sizing: border-box;
   border-radius: 4px;
   width: 100%;
@@ -298,7 +301,7 @@ main {
   font-size: 15px;
   font-weight: normal;
   border: 1px solid #ffd43b;
-  color: #444; }
+  color: #003f40; }
 
 #contact input[type="text"],
 #contact input[type="email"] {
@@ -334,7 +337,7 @@ main {
   transition: background-color 0.7s; }
 
 #contact button[type="submit"]:hover {
-  background-color: #eaeaea;
+  background-color: #8dfdff;
   color: #ffd43b;
   cursor: pointer; }
 
@@ -356,7 +359,7 @@ main {
   text-align: center;
   padding: 1rem 0 1rem 0;
   height: 50px;
-  background-color: #373737; }
+  background-color: #002627; }
 
 ul {
   list-style: none;

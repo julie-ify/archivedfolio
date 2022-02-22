@@ -2,10 +2,9 @@
 
 # Portolio website where you get to know me, my works and how to get in touch with me.
 
-> 
+>
 
-![screenshot](./images/portfolio-img.png)
-
+![screenshot](./images/portfolio-dark.png)
 
 This project entails Building a responsive portfolio website which showcase my bio, projects I have worked on and how to contact me.
 
